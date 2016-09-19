@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leave a Message</title>
+</head>
+<body>
+
+{% for message in last_ten_messages %}
+
+{{ message.content }}
+
+{% endfor %}
+
+
+</body>
+</html>

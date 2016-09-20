@@ -4,6 +4,7 @@ from django.http import	HttpResponse
 
 from . import models
 from . import serializers
+from . import forms
 
 # display last 10 messages
 	#site
@@ -15,6 +16,16 @@ def DisplayMessages(request):
 class DisplayMessagesAPI():
 	pass
 
+
+def LeaveMessage(request):
+	print("leave")
+	if request == "POST":
+		form = forms.MessageCreateForm(request.POST)
+		if (form.is_valid()):
+			print("yes")
+	else:
+		form = forms.MessageCreateForm()
+		return render(request, 'leftmessages/show_messages.html', {'form': form})
 
 
 # create new message

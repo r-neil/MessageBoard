@@ -11,6 +11,13 @@
 
 {% endfor %}
 
+<p>
+
+<form action="leave_message/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
 
 </body>
 </html>

@@ -1,0 +1,24 @@
+
+section#header{
+	height: 50px;
+}
+
+section#content{
+	display: block;
+	margin-right: auto;
+    margin-left: auto;
+	width: 40%;
+	background: #ebebe8;
+}
+
+.message{
+	border-style: groove;	
+}
+
+.content{
+	text-align: center;
+}
+
+.author{
+	text-align: right;
+}

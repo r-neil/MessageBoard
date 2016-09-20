@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import	HttpResponse
-
+from django.http import HttpResponseRedirect, HttpResponse
+from django.urls import reverse
 
 from . import models
 from . import serializers
@@ -16,21 +16,19 @@ def DisplayMessages(request):
 class DisplayMessagesAPI():
 	pass
 
-
-def LeaveMessage(request):
-	print("leave")
-	if request == "POST":
-		form = forms.MessageCreateForm(request.POST)
-		if (form.is_valid()):
-			print("yes")
-	else:
-		form = forms.MessageCreateForm()
-		return render(request, 'leftmessages/show_messages.html', {'form': form})
-
-
 # create new message
 	#site
-
+def leave_message(request):
+	if request.method == 'POST':
+		form = forms.MessageCreateForm(request.POST)
+		if form.is_valid():
+			print('form saved')
+			form.save()
+			return render(request, 'leftmessages/create_form.html', {'form': form})
+	else:
+		form = forms.MessageCreateForm()
+		return render(request, 'leftmessages/create_form.html', {'form': form})
+		
 	#api
 
 #delete and edit to complete CRUD? 

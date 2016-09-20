@@ -1,0 +1,12 @@
+{% extends "leftmessages/layout.html" %}
+
+{% block title %}Leave a New Message{% endblock %}
+
+{% block content %}
+	<form action="" method="POST">
+		{{ form.as_p }}
+		{% csrf_token %}
+		<input type="submit" value="Leave a Message">
+	</form>
+{% endblock %}
+

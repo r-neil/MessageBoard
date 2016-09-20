@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Leave a Message</title>
-</head>
-<body>
+{% extends "leftmessages/layout.html" %}
 
-{% for message in last_ten_messages %}
+{% block title %}Show Messages{% endblock %}
 
-{{ message.content }}
 
-{% endfor %}
+{% block content %}
+	{% for message in last_ten_messages %}
+		<div class="message">
+		<div class='content'> {{ message.content }} </div>
+		<div class='author'> ~{{ message.author }} </div>
+		</div>	
+	{% endfor %}
+{% endblock %}
 
-<p>
 
-<form action="leave_message/" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit" />
-</form>
-
-</body>
-</html>

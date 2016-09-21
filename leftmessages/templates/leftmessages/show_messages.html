@@ -7,8 +7,9 @@
 <div id='title'>Message Board</div> <div id='add-comment'>[<a href='/leave_message'>+</a>]</div>
 	{% for message in last_ten_messages %}
 		<div class="message">
-		<div class='content'> {{ message.content }} </div>
-		<div class='author'> ~{{ message.author }} </div>
+			<div class='content'> {{ message.content }} </div>
+			<div class='author'> ~{{ message.author }} </div>
+			<div class="delete"> <a href="/delete/{{message.pk}}">X</a> </div>
 		</div>	
 	{% endfor %}
 {% endblock %}

@@ -1,4 +1,6 @@
-CSS for HTML Pages
+//TO-DO//
+Overall CSS
 
-Redirect once messages is "posted"
+API
 
+iOS APP

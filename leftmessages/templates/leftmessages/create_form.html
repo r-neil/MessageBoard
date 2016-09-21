@@ -3,6 +3,7 @@
 {% block title %}Leave a New Message{% endblock %}
 
 {% block content %}
+<a href='/'>back</a><div id='title'>Leave a Message</div> <div id='add-comment'>
 	<form action="" method="POST">
 		{{ form.as_p }}
 		{% csrf_token %}

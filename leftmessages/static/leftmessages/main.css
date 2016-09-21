@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster';
 
 section#header{
 	height: 50px;
@@ -11,11 +12,20 @@ section#content{
 	background: #ebebe8;
 }
 
+#title{
+	text-align: center;
+}
+
+#add-comment{
+	text-align: right;
+}
+
 .message{
 	border-style: groove;	
 }
 
 .content{
+	font-family: 'Lobster', cursive;
 	text-align: center;
 }
 

@@ -3,7 +3,7 @@
 This project is a web application and REST API for viewing, leaving and deleting messages from a shared message board.
 
 ## Sample Web Message Board:
-![Web Message Board](README-Img/MessageBoard.png)
+![Web Message Board](MessageBoard/APIandWebsite/README-Img/MessageBoard.PNG)
 
 ## Sample API Response
 

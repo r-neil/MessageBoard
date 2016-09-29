@@ -5,7 +5,7 @@ This project is a Web and iOS message board. Messages can be left, deleted or vi
 - API and Website
 	- Contains website and REST API
 	- Python with Django framework. HTML and CSS.
-![Web Message Board](APIandWebsite/README-Img/MessageBoard.png)
+![Web Message Board](https://github.com/r-neil/MessageBoard/blob/master/APIandWebsite/README-Img/MessageBoard.PNG)
 
 - iOS App
 	- Work in progress. Please check back later.

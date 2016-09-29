@@ -5,6 +5,7 @@ from . import models
 class LeftMessageSerializer(serializers.ModelSerializer):
 	class Meta:
 		fields = (
+			'pk',
 			'create_date',
 			'content',
 			'author',

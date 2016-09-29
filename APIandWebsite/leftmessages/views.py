@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect, HttpResponse
 from rest_framework import status
 from rest_framework.exceptions import APIException
@@ -47,22 +47,14 @@ class DisplayCreateMessagesAPI(APIView):
 		return Response(serializer.data)
 
 	def post(self, request, format=None):
-		print("***POST IS CALLED***")
-		print("{}".format(request.data))
-		serializer = serializers.CreateMessageSerializer(date=request.data)
-		print("post!")
+		serializer = serializers.CreateMessageSerializer(data=request.data)
 		serializer.is_valid(raise_exception=True)
 		serializer.save()
 		return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-
-
-# class DeleteMessage(APIView):
-
-# 	message = models.LeftMessage.objects.get(pk=1)
-# 	print("delete: {}".format(message))
-# 	raise APIException("message has been deleted")
-
-
-
-
+	def delete(self, request, format=None):
+		message_id = request.data.get("message_id")
+		message_to_delete = get_object_or_404(models.LeftMessage, pk=int(message_id))
+		message_to_delete.delete()
+		return Response("Message ID {} has been deleted.".format(message_id), status=status.HTTP_200_OK)
+		

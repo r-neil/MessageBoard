@@ -1,6 +1,10 @@
 //TO-DO//
-Overall CSS
+
+README
+	-add imgs
+	
 
 API
 
 iOS APP
+

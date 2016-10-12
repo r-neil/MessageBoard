@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1091A3BB1DAD75FD00C3938E /* TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091A3BA1DAD75FD00C3938E /* TVCell.swift */; };
+		10BD12501DAEF49800194A14 /* LeaveMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD124F1DAEF49800194A14 /* LeaveMessageVC.swift */; };
 		10DD98EA1D9DC16000D17FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD98E91D9DC16000D17FA4 /* AppDelegate.swift */; };
 		10DD98EF1D9DC16000D17FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD98ED1D9DC16000D17FA4 /* Main.storyboard */; };
 		10DD98F11D9DC16000D17FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DD98F01D9DC16000D17FA4 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1091A3BA1DAD75FD00C3938E /* TVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TVCell.swift; path = ../TVCell.swift; sourceTree = "<group>"; };
+		10BD124F1DAEF49800194A14 /* LeaveMessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveMessageVC.swift; sourceTree = "<group>"; };
 		10DD98E61D9DC16000D17FA4 /* MB-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MB-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD98E91D9DC16000D17FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10DD98EE1D9DC16000D17FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,9 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				10DD99011D9DE55B00D17FA4 /* Base */,
-				10DD98FB1D9DC48A00D17FA4 /* MainTVC.swift */,
-				10DD98FD1D9DE52E00D17FA4 /* TableModel.swift */,
 				10DD98ED1D9DC16000D17FA4 /* Main.storyboard */,
+				10BD124F1DAEF49800194A14 /* LeaveMessageVC.swift */,
+				10DD98FB1D9DC48A00D17FA4 /* MainTVC.swift */,
+				1091A3BA1DAD75FD00C3938E /* TVCell.swift */,
+				10DD98FD1D9DE52E00D17FA4 /* TableModel.swift */,
 				10DD98FF1D9DE54700D17FA4 /* APIHelper.swift */,
 			);
 			path = "MB-iOS-App";
@@ -152,7 +158,9 @@
 			files = (
 				10DD99001D9DE54700D17FA4 /* APIHelper.swift in Sources */,
 				10DD98FC1D9DC48A00D17FA4 /* MainTVC.swift in Sources */,
+				10BD12501DAEF49800194A14 /* LeaveMessageVC.swift in Sources */,
 				10DD98EA1D9DC16000D17FA4 /* AppDelegate.swift in Sources */,
+				1091A3BB1DAD75FD00C3938E /* TVCell.swift in Sources */,
 				10DD98FE1D9DE52E00D17FA4 /* TableModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +321,7 @@
 				10DD98FA1D9DC16000D17FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
